@@ -1,0 +1,6 @@
+[
+  {
+    "name": "docker-ecs",
+    "imageUrl": "public.ecr.aws/g1v4g5y9/docker-ecs:latest"
+  }
+]
