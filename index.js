@@ -1,9 +1,18 @@
 const express = require('express');
+const path = require('path');
 
 const app = express();
+const options = {
+  root: path.join(__dirname, 'public'),
+  dotfiles: 'deny',
+  headers: {
+    'x-timestamp': Date.now(),
+    'x-sent': true
+  }
+}
 
 app.get('/', (req, res) => {
-  res.send('this is my express');
+  res.sendFile('index.html', options);
 })
 
 app.get('/me', (req, res) => {
