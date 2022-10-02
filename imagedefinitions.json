@@ -1,6 +1,6 @@
 [
   {
     "name": "web-containter",
-    "imageUri": "public.ecr.aws/g1v4g5y9/docker-ecs:latest"
+    "imageUri": "public.ecr.aws/g1v4g5y9/expess-app:latest"
   }
 ]

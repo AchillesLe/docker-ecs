@@ -9,9 +9,9 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker build -t docker-ecs .
-      - docker tag docker-ecs:latest public.ecr.aws/g1v4g5y9/docker-ecs:latest
+      - docker tag docker-ecs:latest public.ecr.aws/g1v4g5y9/expess-app:latest
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker push public.ecr.aws/g1v4g5y9/docker-ecs:latest
+      - docker push public.ecr.aws/g1v4g5y9/expess-app:latest
